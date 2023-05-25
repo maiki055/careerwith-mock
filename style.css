@@ -1,0 +1,844 @@
+/*** 
+  Common
+***/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 40px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 7px rgba(0 0 0 0.2);
+}
+
+.button-large {
+  padding: 10px 80px;
+  line-height: initial;
+  border-radius: 10px;
+}
+
+.button-multi-row {
+  text-align: center;
+}
+
+.button-large.button-multi-row {
+  border-radius: 39px;
+}
+
+.button-large.button-multi-row small {
+  font-size: 14px;
+}
+
+.button-large.button-multi-row span {
+  font-size: 22px;
+}
+
+.button.button-primary {
+  background-color: #ef2828;
+  color: #fff;
+}
+
+/*** 
+  Header
+***/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.header .header-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Logo */
+.header .header-logo {
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .header-logo a {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.header .header-logo small {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/*** 
+  Main Section
+***/
+.main-body {
+  margin-top: 80px;
+}
+
+.main-body .section {
+  padding: 60px 40px;
+}
+
+.main-body .section .section-heading {
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main-body .section .section-heading h2 {
+  margin-bottom: 15px;
+}
+
+.main-body .section .section-heading h2 strong {
+  position: relative;
+  z-index: 0;
+}
+
+.main-body .section .section-heading h2 strong:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  background-color: yellow;
+  z-index: -1;
+}
+
+.main-body .section .section-heading h2 strong.red:before {
+  background-color: #ef2828;
+}
+
+.main-body .section .section-heading p {
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/*** 
+  FirstView Section
+***/
+.section-firstview {
+  padding: 100px 60px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.section-firstview .section-firstview-catchcopy {
+  line-height: 1.4;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.section-firstview .section-firstview-purpose-list {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-firstview .section-firstview-purpose-list .section-firstview-purpose-item {
+  display: inline-block;
+  color: #fff;
+  min-width: 200px;
+  padding: 20px 50px;
+  background-color:  #0D162B;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.section-firstview .section-firstview-action_button {
+  margin-top: 60px;
+}
+
+/*** 
+  About Worry
+***/
+.section-worry {
+  position: relative;
+  color: #fff;
+  background-color: #0D162B;
+}
+
+.section-worry:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  left: 0;
+  width: 0;
+  margin: 0 auto;
+  color: #0D162B;
+  line-height: 1;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 50px 200px;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+.section-worry .section-worry-list {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-worry .section-worry-list .section-worry-item {
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-worry .section-worry-list .section-worry-item strong {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*** 
+  About Section
+***/
+.section-about {
+  text-align: center;
+}
+
+.section-about .section-about-list {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.section-about .section-about-list::before {
+  content: '×';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+}
+
+.section-about .section-about-list .section-about-item {
+  margin: 0 15px;
+  padding: 20px;
+}
+
+.section-about .section-about-list .section-about-item h3 {
+  min-width: 400px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #0D162B;
+  font-size: 26px;
+}
+
+.section-about .section-about-list .section-about-item p {
+  padding: 30px 0;
+  line-height: 2;
+  background-color: #f5f5f5;
+  font-size: 18px;
+}
+
+.section-about .section-about-message {
+  margin-top: 20px;
+}
+
+.section-about .section-about-message .section-about-message-arrow {
+  position: relative;
+  transform: rotate(90deg); 
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 0 auto;
+  color: #ddd;
+  background: currentColor;
+}
+
+.section-about .section-about-message .section-about-message-arrow:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  width: 0;
+  height: 0;
+  border: 40px solid currentColor;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-right-width: 0;
+  border-bottom-color: transparent;
+}
+
+.section-about .section-about-message p {
+  margin-top: 55px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*** 
+  Solution Section
+***/
+.section-solution {
+  text-align: center;
+}
+
+.section-solution .section-solution-list {
+  max-width: 700px;
+  margin: 0 auto;
+  /* text-align: left; */
+}
+
+.section-solution .section-solution-list .section-solution-item {
+  position: relative;
+  /* padding: 15px 0; */
+  font-size: 26px;
+  font-weight: 600;
+  /* border-bottom: 1px dashed #0D162B; */
+}
+
+.section-solution .section-solution-list .section-solution-item:not(:last-child)::after {
+  content: '';
+  display: block;
+  color: #ccc;
+  line-height: 1;
+  width: 0;
+  margin: 15px auto;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 20px 30px;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+.section-solution .section-solution-list .section-solution-item:last-child {
+  color: #ef2828;
+}
+
+.section-solution .section-solution-list .section-solution-item p > span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  line-height: 50px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  background-color: #0D162B;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*** 
+  Feature Section
+***/
+.section-feature {
+  background-color: #f9f9f9;
+}
+
+.section-feature .section-feature-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-feature .section-feature-list .section-feature-item {
+  display: flex;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 10px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-feature .section-feature-list .section-feature-item + .section-feature-item {
+  margin-top: 40px;
+}
+
+.section-feature .section-feature-list .section-feature-item .section-feature-item-content {
+  width: 50%;
+}
+
+.section-feature .section-feature-list .section-feature-item .section-feature-item-content p {
+  margin-top: 20px;
+}
+
+.section-feature .section-feature-list .section-feature-item .section-feature-item-image {
+  width: calc(50% - 30px);
+}
+
+.section-feature .section-feature-list .section-feature-item .section-feature-item-image img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: #ddd;
+}
+
+/*** 
+  Comparison Section
+***/
+.section-comparison {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-comparison .section-comparison-feature + .section-comparison-feature {
+  margin-top: 40px;
+}
+
+.section-comparison .section-comparison-feature h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.section-comparison .section-comparison-feature h3:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  background-color: #0D162B;
+}
+
+.section-comparison .section-comparison-feature h3 span {
+  margin-right: 15px;
+}
+
+.section-comparison .section-comparison-feature p {
+  margin-bottom: 30px;
+}
+
+.section-comparison .section-comparison-table {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col {
+  width: 450px;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col .section-comparison-table-col-h {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0D162B;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col .section-comparison-table-col-b {
+  padding: 30px 20px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col .section-comparison-table-col-b .arrow-bottom {
+  display: block;
+  color: #ccc;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 20px 40px;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col .section-comparison-table-col-b strong {
+  font-size: 30px;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col:first-child .section-comparison-table-col-h {
+  background-color: #ef2828;
+}
+
+.section-comparison .section-comparison-table .section-comparison-table-col:first-child .section-comparison-table-col-b {
+  color: #ef2828;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** 
+  Main Section
+***/
+.unlimited-main-body {
+  margin-top: 80px;
+}
+
+.unlimited-main-body .unlimited-section {
+  padding: 60px 40px;
+}
+
+.unlimited-main-body .unlimited-section .unlimited-section-heading {
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.unlimited-main-body .unlimited-section .unlimited-section-heading h2 {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.unlimited-main-body .unlimited-section .unlimited-section-heading p {
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+
+
+/*** 
+  About Section
+***/
+.unlimited-section-about .unlimited-section-about-career_path {
+  text-align: center;
+}
+
+.unlimited-section-about .unlimited-section-about-career_path .unlimited-section-about-career_path-list {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.unlimited-section-about .unlimited-section-about-career_path .unlimited-section-about-career_path-item {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.unlimited-section-about .unlimited-section-about-career_path .unlimited-section-about-career_path-item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+}
+
+.unlimited-section-about .unlimited-section-about-career_path .unlimited-section-about-career_path-item p {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/*** 
+  Skill Section
+***/
+.unlimited-section-skill .unlimited-section-skill-skill_list {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.unlimited-section-skill .unlimited-section-skill-skill_item {
+  width: 100%;
+  max-width: 220px;
+  min-width: 160px;
+  margin: 0 10px;
+  text-align: center;
+  
+}
+
+.unlimited-section-skill .unlimited-section-skill-skill_item .unlimited-section-skill-skill_item-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background: #ef2828;
+  border-radius: 100%;
+}
+
+.unlimited-section-skill .unlimited-section-skill-skill_item .unlimited-section-skill-skill_item-wrapper p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  line-height: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*** 
+  Problem Section
+***/
+.unlimited-section-problem {
+  background-color: #ddd;
+}
+
+.unlimited-section-problem .unlimited-section-problem-insight {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.unlimited-section-problem .unlimited-section-problem-insight strong {
+  font-size: 40px;
+  color: #ef2828;
+}
+
+.unlimited-section-problem .unlimited-section-problem-list {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.unlimited-section-problem .unlimited-section-problem-list .unlimited-section-problem-item {
+  padding: 6px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/*** 
+  Solution Section
+***/
+.unlimited-section-solution {
+  background-color: #f9f9f9;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item + .unlimited-section-solution-item {
+  margin-top: 50px;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item h3 {
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item .unlimited-section-solution-item-detail_list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item .unlimited-section-solution-item-detail_item {
+  width: 33.33333%;
+  padding: 10px;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item .unlimited-section-solution-item-detail_item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #ddd;
+}
+
+.unlimited-section-solution .unlimited-section-solution-list .unlimited-section-solution-item .unlimited-section-solution-item-detail_item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*** 
+  Content Section
+***/
+.unlimited-section-content {
+
+}
+
+.unlimited-section-content .unlimited-section-content-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.unlimited-section-content .unlimited-section-content-list .unlimited-section-content-item {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.unlimited-section-content .unlimited-section-content-list .unlimited-section-content-item + .unlimited-section-content-item {
+  margin-top: 50px;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-heading h3 {
+  margin-bottom: 10px;;
+  font-size: 34px;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-skill_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-skill_item {
+  text-align: center;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-skill_item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.unlimited-section-content .unlimited-section-content-item .unlimited-section-content-item-skill_item p {
+  font-weight: 600;
+}
+
+/*** 
+  Price Section
+***/
+.unlimited-section-price .unlimited-section-price-table {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.unlimited-section-price .unlimited-section-price-table .unlimited-section-price-table-row {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unlimited-section-price .unlimited-section-price-table .unlimited-section-price-table-row  .unlimited-section-price-table-row-title {
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.unlimited-section-price .unlimited-section-price-table .unlimited-section-price-table-row-price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.unlimited-section-price .unlimited-section-price-table .unlimited-section-price-table-row-price .unlimited-section-price-table-row-price_main {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.unlimited-section-price .unlimited-section-price-table .unlimited-section-price-table-row-price .unlimited-section-price-table-row-price_sub {
+  padding-bottom: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.unlimited-section-price .unlimited-section-price-action_button {
+  margin-top: 30px;
+  text-align: center;
+}
